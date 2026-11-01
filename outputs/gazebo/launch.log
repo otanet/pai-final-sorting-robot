@@ -1,0 +1,593 @@
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-11-01-02-57-29-848221-f11c8a82889f-741
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign gazebo -r-1]: process started with pid [747]
+[INFO] [create-2]: process started with pid [749]
+[INFO] [move_group-3]: process started with pid [752]
+[INFO] [rviz2-4]: process started with pid [754]
+[INFO] [static_transform_publisher-5]: process started with pid [756]
+[INFO] [robot_state_publisher-6]: process started with pid [758]
+[INFO] [ros2 run controller_manager spawner joint_state_broadcaster-7]: process started with pid [760]
+[INFO] [ros2 run controller_manager spawner crane_plus_arm_controller-8]: process started with pid [762]
+[INFO] [ros2 run controller_manager spawner crane_plus_gripper_controller-9]: process started with pid [765]
+[INFO] [parameter_bridge-10]: process started with pid [768]
+[static_transform_publisher-5] [WARN] [1793501851.487043574] []: Old-style arguments are deprecated; see --help for new-style arguments
+[create-2] [INFO] [1793501851.574925037] [ros_gz_sim]: Requesting list of world names.
+[static_transform_publisher-5] [INFO] [1793501851.584324713] [static_transform_publisher]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'world' to 'base_link'
+[parameter_bridge-10] [INFO] [1793501851.652296781] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[rviz2-4] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ubuntu'
+[robot_state_publisher-6] [INFO] [1793501851.682947096] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-6] [INFO] [1793501851.683242493] [robot_state_publisher]: got segment crane_plus_base
+[robot_state_publisher-6] [INFO] [1793501851.683272322] [robot_state_publisher]: got segment crane_plus_link1
+[robot_state_publisher-6] [INFO] [1793501851.683283794] [robot_state_publisher]: got segment crane_plus_link2
+[robot_state_publisher-6] [INFO] [1793501851.683294134] [robot_state_publisher]: got segment crane_plus_link3
+[robot_state_publisher-6] [INFO] [1793501851.683303693] [robot_state_publisher]: got segment crane_plus_link4
+[robot_state_publisher-6] [INFO] [1793501851.683313151] [robot_state_publisher]: got segment crane_plus_link_endtip
+[robot_state_publisher-6] [INFO] [1793501851.683323762] [robot_state_publisher]: got segment crane_plus_link_hand
+[robot_state_publisher-6] [INFO] [1793501851.683333501] [robot_state_publisher]: got segment world
+[move_group-3] [WARN] [1793501851.747908269] [move_group.move_group]: Falling back to using the the move_group node namespace (deprecated behavior).
+[move_group-3] [INFO] [1793501851.827831691] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0 seconds
+[move_group-3] [INFO] [1793501851.827932358] [moveit_robot_model.robot_model]: Loading robot model 'crane_plus'...
+[rviz2-4] [INFO] [1793501852.186764957] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-4] [INFO] [1793501852.187290494] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-4] [INFO] [1793501852.330089613] [rviz2]: Stereo is NOT SUPPORTED
+[ign gazebo -r-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ubuntu'
+[move_group-3] [INFO] [1793501852.506733209] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-3] [INFO] [1793501852.507257523] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-3] [INFO] [1793501852.512108854] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-3] [INFO] [1793501852.515806158] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-3] [INFO] [1793501852.515862979] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-3] [INFO] [1793501852.517334365] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-3] [INFO] [1793501852.517382940] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-3] [INFO] [1793501852.519207085] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-3] [INFO] [1793501852.520970521] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-3] [WARN] [1793501852.535489773] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-3] [ERROR] [1793501852.535622392] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-3] [INFO] [1793501852.773205332] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'move_group'
+[move_group-3] [INFO] [1793501852.881831804] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-3] [INFO] [1793501852.932414825] [moveit_ros.add_time_optimal_parameterization]: Param 'move_group.path_tolerance' was not set. Using default value: 0.100000
+[move_group-3] [INFO] [1793501852.932585769] [moveit_ros.add_time_optimal_parameterization]: Param 'move_group.resample_dt' was not set. Using default value: 0.100000
+[move_group-3] [INFO] [1793501852.932607722] [moveit_ros.add_time_optimal_parameterization]: Param 'move_group.min_angle_change' was not set. Using default value: 0.001000
+[move_group-3] [INFO] [1793501852.932653972] [moveit_ros.fix_workspace_bounds]: Param 'move_group.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-3] [INFO] [1793501852.932691886] [moveit_ros.fix_start_state_bounds]: Param 'move_group.start_state_max_bounds_error' was set to 0.100000
+[move_group-3] [INFO] [1793501852.932706184] [moveit_ros.fix_start_state_bounds]: Param 'move_group.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-3] [INFO] [1793501852.932739419] [moveit_ros.fix_start_state_collision]: Param 'move_group.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-3] [INFO] [1793501852.932756212] [moveit_ros.fix_start_state_collision]: Param 'move_group.jiggle_fraction' was not set. Using default value: 0.020000
+[move_group-3] [INFO] [1793501852.932772113] [moveit_ros.fix_start_state_collision]: Param 'move_group.max_sampling_attempts' was not set. Using default value: 100
+[move_group-3] [INFO] [1793501852.932803194] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-3] [INFO] [1793501852.932815498] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-3] [INFO] [1793501852.932827031] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-3] [INFO] [1793501852.932837812] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-3] [INFO] [1793501852.932848232] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[rviz2-4] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[rviz2-4]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
+[move_group-3] [INFO] [1793501853.254003557] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for crane_plus_arm_controller
+[move_group-3] [INFO] [1793501853.305015663] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for crane_plus_gripper_controller
+[move_group-3] [INFO] [1793501853.306696016] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-3] [INFO] [1793501853.306765672] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-3] [INFO] [1793501853.323350792] [moveit_ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-3] [INFO] [1793501853.323400710] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-3] [INFO] [1793501853.470390816] [move_group.move_group]: 
+[move_group-3] 
+[move_group-3] ********************************************************
+[move_group-3] * MoveGroup using: 
+[move_group-3] *     - ApplyPlanningSceneService
+[move_group-3] *     - ClearOctomapService
+[move_group-3] *     - CartesianPathService
+[move_group-3] *     - ExecuteTrajectoryAction
+[move_group-3] *     - GetPlanningSceneService
+[move_group-3] *     - KinematicsService
+[move_group-3] *     - MoveAction
+[move_group-3] *     - MotionPlanService
+[move_group-3] *     - QueryPlannersService
+[move_group-3] *     - StateValidationService
+[move_group-3] ********************************************************
+[move_group-3] 
+[move_group-3] [INFO] [1793501853.470562612] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-3] [INFO] [1793501853.470596889] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-3] [96mLoading 'move_group/ApplyPlanningSceneService'...
+[move_group-3] [0m[96mLoading 'move_group/ClearOctomapService'...
+[move_group-3] [0m[96mLoading 'move_group/MoveGroupCartesianPathService'...
+[move_group-3] [0m[96mLoading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-3] [0m[96mLoading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-3] [0m[96mLoading 'move_group/MoveGroupKinematicsService'...
+[move_group-3] [0m[96mLoading 'move_group/MoveGroupMoveAction'...
+[move_group-3] [0m[96mLoading 'move_group/MoveGroupPlanService'...
+[move_group-3] [0m[96mLoading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-3] [0m[96mLoading 'move_group/MoveGroupStateValidationService'...
+[move_group-3] [0m[92m
+[move_group-3] You can start planning now!
+[move_group-3] 
+[create-2] [INFO] [1793501853.913594978] [ros_gz_sim]: Waiting messages on topic [/robot_description].
+[create-2] [INFO] [1793501854.011608223] [ros_gz_sim]: Requested creation of entity.
+[create-2] [INFO] [1793501854.011709481] [ros_gz_sim]: OK creation of entity.
+[ros2 run controller_manager spawner crane_plus_gripper_controller-9] [INFO] [1793501854.154482349] [spawner_crane_plus_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[ros2 run controller_manager spawner joint_state_broadcaster-7] [INFO] [1793501854.154792395] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [create-2]: process has finished cleanly [pid 749]
+[ros2 run controller_manager spawner crane_plus_arm_controller-8] [INFO] [1793501854.311019676] [spawner_crane_plus_arm_controller]: waiting for service /controller_manager/list_controllers to become available...
+[ign gazebo -r-1] [INFO] [1793501854.490743590] [GazeboSimROS2ControlPlugin]: robot_param_node is robot_state_publisher
+[ign gazebo -r-1] [INFO] [1793501854.490923852] [GazeboSimROS2ControlPlugin]: robot_param_node is robot_description
+[ign gazebo -r-1] [INFO] [1793501854.602870178] [gz_ros2_control]: [ign_ros2_control] Fixed joint [base_link_to_world_joint] (Entity=45)] is skipped
+[ign gazebo -r-1] [INFO] [1793501855.099816297] [gz_ros2_control]: connected to service!! robot_state_publisher asking for robot_description
+[ign gazebo -r-1] [INFO] [1793501855.102118885] [gz_ros2_control]: Received URDF from param server
+[ign gazebo -r-1] [INFO] [1793501855.272591319] [gz_ros2_control]: The position_proportional_gain has been set to: 0.1
+[ign gazebo -r-1] [INFO] [1793501855.272778355] [gz_ros2_control]: Loading joint: crane_plus_joint1
+[ign gazebo -r-1] [INFO] [1793501855.272826789] [gz_ros2_control]: 	State:
+[ign gazebo -r-1] [INFO] [1793501855.272855275] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.272891897] [gz_ros2_control]: 		 velocity
+[ign gazebo -r-1] [INFO] [1793501855.272909561] [gz_ros2_control]: 		 effort
+[ign gazebo -r-1] [INFO] [1793501855.272922767] [gz_ros2_control]: 	Command:
+[ign gazebo -r-1] [INFO] [1793501855.272935762] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.272985219] [gz_ros2_control]: Loading joint: crane_plus_joint2
+[ign gazebo -r-1] [INFO] [1793501855.273020087] [gz_ros2_control]: 	State:
+[ign gazebo -r-1] [INFO] [1793501855.273040948] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.273071137] [gz_ros2_control]: 		 velocity
+[ign gazebo -r-1] [INFO] [1793501855.273085765] [gz_ros2_control]: 		 effort
+[ign gazebo -r-1] [INFO] [1793501855.273099893] [gz_ros2_control]: 	Command:
+[ign gazebo -r-1] [INFO] [1793501855.273114912] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.273161503] [gz_ros2_control]: Loading joint: crane_plus_joint3
+[ign gazebo -r-1] [INFO] [1793501855.273193686] [gz_ros2_control]: 	State:
+[ign gazebo -r-1] [INFO] [1793501855.273211100] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.273233484] [gz_ros2_control]: 		 velocity
+[ign gazebo -r-1] [INFO] [1793501855.273258262] [gz_ros2_control]: 		 effort
+[ign gazebo -r-1] [INFO] [1793501855.273273362] [gz_ros2_control]: 	Command:
+[ign gazebo -r-1] [INFO] [1793501855.273286317] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.273320674] [gz_ros2_control]: Loading joint: crane_plus_joint4
+[ign gazebo -r-1] [INFO] [1793501855.273350272] [gz_ros2_control]: 	State:
+[ign gazebo -r-1] [INFO] [1793501855.273365792] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.273379850] [gz_ros2_control]: 		 velocity
+[ign gazebo -r-1] [INFO] [1793501855.273411953] [gz_ros2_control]: 		 effort
+[ign gazebo -r-1] [INFO] [1793501855.273427914] [gz_ros2_control]: 	Command:
+[ign gazebo -r-1] [INFO] [1793501855.273456319] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.273494514] [gz_ros2_control]: Loading joint: crane_plus_joint_hand
+[ign gazebo -r-1] [INFO] [1793501855.273523571] [gz_ros2_control]: 	State:
+[ign gazebo -r-1] [INFO] [1793501855.273539832] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.273554852] [gz_ros2_control]: 		 velocity
+[ign gazebo -r-1] [INFO] [1793501855.273568007] [gz_ros2_control]: 		 effort
+[ign gazebo -r-1] [INFO] [1793501855.273599850] [gz_ros2_control]: 	Command:
+[ign gazebo -r-1] [INFO] [1793501855.273614959] [gz_ros2_control]: 		 position
+[ign gazebo -r-1] [INFO] [1793501855.273734433] [resource_manager]: Initialize hardware 'crane_plus' 
+[ign gazebo -r-1] [WARN] [1793501855.273773419] [gz_ros2_control]: On init...
+[ign gazebo -r-1] [INFO] [1793501855.273870619] [resource_manager]: Successful initialization of hardware 'crane_plus'
+[ign gazebo -r-1] [INFO] [1793501855.273953270] [resource_manager]: 'configure' hardware 'crane_plus' 
+[ign gazebo -r-1] [INFO] [1793501855.273973590] [gz_ros2_control]: System Successfully configured!
+[ign gazebo -r-1] [INFO] [1793501855.274015111] [resource_manager]: Successful 'configure' of hardware 'crane_plus'
+[ign gazebo -r-1] [INFO] [1793501855.274044919] [resource_manager]: 'activate' hardware 'crane_plus' 
+[ign gazebo -r-1] [INFO] [1793501855.274059077] [resource_manager]: Successful 'activate' of hardware 'crane_plus'
+[ign gazebo -r-1] [INFO] [1793501855.274074938] [gz_ros2_control]: Loading controller_manager
+[ign gazebo -r-1] [WARN] [1793501855.755806127] [gz_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[rviz2-4] [ERROR] [1793501856.245680641] [moveit_ros_visualization.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-4] [INFO] [1793501856.349702337] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-4] [INFO] [1793501856.464560810] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.057 seconds
+[rviz2-4] [INFO] [1793501856.464813103] [moveit_robot_model.robot_model]: Loading robot model 'crane_plus'...
+[ign gazebo -r-1] [INFO] [1793501857.698755768] [controller_manager]: Loading controller 'crane_plus_gripper_controller'
+[ign gazebo -r-1] [WARN] [1793501857.838405754] [crane_plus_gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ign gazebo -r-1] [INFO] [1793501857.851045076] [controller_manager]: Loading controller 'crane_plus_arm_controller'
+[ros2 run controller_manager spawner crane_plus_gripper_controller-9] [INFO] [1793501857.853320251] [spawner_crane_plus_gripper_controller]: [94mLoaded [1mcrane_plus_gripper_controller[0m
+[ign gazebo -r-1] [WARN] [1793501857.929824016] [crane_plus_arm_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[ign gazebo -r-1] [INFO] [1793501857.943126884] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[ros2 run controller_manager spawner crane_plus_arm_controller-8] [INFO] [1793501857.945121511] [spawner_crane_plus_arm_controller]: [94mLoaded [1mcrane_plus_arm_controller[0m
+[rviz2-4] [INFO] [1793501858.009611677] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.01 seconds
+[rviz2-4] [INFO] [1793501858.009768203] [moveit_robot_model.robot_model]: Loading robot model 'crane_plus'...
+[ign gazebo -r-1] [INFO] [1793501858.041895305] [controller_manager]: Configuring controller 'crane_plus_gripper_controller'
+[ign gazebo -r-1] [INFO] [1793501858.042547149] [crane_plus_gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ign gazebo -r-1] [INFO] [1793501858.042641042] [crane_plus_gripper_controller]: Command interfaces are [position] and state interfaces are [position].
+[ign gazebo -r-1] [INFO] [1793501858.042705829] [crane_plus_gripper_controller]: Using 'splines' interpolation method.
+[ros2 run controller_manager spawner joint_state_broadcaster-7] [INFO] [1793501858.044382113] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[ign gazebo -r-1] [INFO] [1793501858.054672628] [crane_plus_gripper_controller]: Controller state will be published at 50.00 Hz.
+[ign gazebo -r-1] [INFO] [1793501858.077224213] [crane_plus_gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[ign gazebo -r-1] [INFO] [1793501858.117344831] [controller_manager]: Configuring controller 'crane_plus_arm_controller'
+[ign gazebo -r-1] [INFO] [1793501858.117792596] [crane_plus_arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ign gazebo -r-1] [INFO] [1793501858.117878504] [crane_plus_arm_controller]: Command interfaces are [position] and state interfaces are [position].
+[ign gazebo -r-1] [INFO] [1793501858.118002085] [crane_plus_arm_controller]: Using 'splines' interpolation method.
+[ign gazebo -r-1] [INFO] [1793501858.120704244] [crane_plus_arm_controller]: Controller state will be published at 50.00 Hz.
+[ign gazebo -r-1] [INFO] [1793501858.134705346] [crane_plus_arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[ign gazebo -r-1] [INFO] [1793501858.185531589] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[ign gazebo -r-1] [INFO] [1793501858.185791096] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[ros2 run controller_manager spawner crane_plus_gripper_controller-9] [INFO] [1793501858.272869470] [spawner_crane_plus_gripper_controller]: [92mConfigured and activated [1mcrane_plus_gripper_controller[0m
+[ros2 run controller_manager spawner crane_plus_arm_controller-8] [INFO] [1793501858.319190551] [spawner_crane_plus_arm_controller]: [92mConfigured and activated [1mcrane_plus_arm_controller[0m
+[ros2 run controller_manager spawner joint_state_broadcaster-7] [INFO] [1793501858.397133036] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[INFO] [ros2 run controller_manager spawner crane_plus_gripper_controller-9]: process has finished cleanly [pid 765]
+[INFO] [ros2 run controller_manager spawner crane_plus_arm_controller-8]: process has finished cleanly [pid 762]
+[INFO] [ros2 run controller_manager spawner joint_state_broadcaster-7]: process has finished cleanly [pid 760]
+[rviz2-4] [INFO] [1793501858.864937898] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-4] [INFO] [1793501858.866978444] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-4] [INFO] [1793501858.922418044] [interactive_marker_display_100585463859504]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-4] [INFO] [1793501858.955123977] [moveit_ros_visualization.motion_planning_frame]: group arm
+[rviz2-4] [INFO] [1793501858.955220405] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'arm' in namespace ''
+[rviz2-4] [INFO] [1793501859.019405416] [move_group_interface]: Ready to take commands for planning group arm.
+[rviz2-4] [INFO] [1793501859.313053404] [interactive_marker_display_100585463859504]: Sending request for interactive markers
+[rviz2-4] [INFO] [1793501859.460219472] [interactive_marker_display_100585463859504]: Service response received for initialization
+[rviz2-4] [INFO] [1793501864.610514261] [rclcpp]: signal_handler(signum=15)
+[rviz2-4] [WARN] [1793501864.624337298] [interactive_marker_display_100585463859504]: Server not available while running, resetting
+[rviz2-4] 
+[rviz2-4] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+[rviz2-4] This error state is being overwritten:
+[rviz2-4] 
+[rviz2-4]   'rcl node's context is invalid, at ./src/rcl/node.c:428'
+[rviz2-4] 
+[rviz2-4] with this new error message:
+[rviz2-4] 
+[rviz2-4]   'publisher's context is invalid, at ./src/rcl/publisher.c:389'
+[rviz2-4] 
+[rviz2-4] rcutils_reset_error() should be called after error handling to avoid this.
+[rviz2-4] <<<
+[rviz2-4] [INFO] [1793501870.298089874] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[ERROR] [rviz2-4]: process has died [pid 754, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/ubuntu/airobot_ws/install/crane_plus_moveit_config/share/crane_plus_moveit_config/launch/run_move_group.rviz --ros-args -r __node:=rviz2 -p use_sim_time:=True --params-file /tmp/launch_params_ehbukcmp --params-file /tmp/launch_params_razy534i --params-file /tmp/launch_params_nrj8r8mc --params-file /tmp/launch_params__4ianzrs'].
+[ign gazebo -r-1] [INFO] [1793501904.578668036] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501904.578930971] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501906.538657158] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501906.885207339] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501906.885398192] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501910.522472968] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501910.840594961] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501910.840711579] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501913.583795879] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501913.895759076] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501913.895853260] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501915.956618538] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501916.296467043] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501916.296628659] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501919.733869025] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501920.050683368] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501920.050809946] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501924.806624315] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501925.158373843] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501925.158594093] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501928.933005507] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501929.263012131] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501929.263202323] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501931.320248918] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501931.667742201] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501931.667864851] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501934.208766033] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793501934.522182691] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793501934.522394105] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793501939.181097813] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [1;31m[Err] [UserCommands.cc:1329] [0m[1;31mEntity named [[0m[1;31mwood_cube_5cm[0m[1;31m] of type [[0m[1;31m2[0m[1;31m] not found, so not removed.[0m[1;31m[0m
+[ign gazebo -r-1] [INFO] [1793502341.015399654] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502341.019716320] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502343.055593348] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502343.401877877] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502343.402857905] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502347.872694744] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502348.215799501] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502348.216209161] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502351.667599426] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502351.973075052] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502351.973444000] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502354.376189215] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502354.729748629] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502354.730164615] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502358.902711449] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502359.238454076] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502359.238898371] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502366.205595533] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502366.561947190] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502366.562137431] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502371.117261638] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502371.470179827] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502371.470343012] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502374.258078366] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502374.575270781] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502374.575436331] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502376.660864449] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502377.003813756] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502377.003962067] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502378.355362609] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502378.711033600] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502378.711126571] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502381.108006826] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502381.415557508] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502381.416019944] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502383.172370068] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502383.520970755] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502383.521064990] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502384.794371613] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502385.125298012] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502385.125576409] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502387.145195481] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502387.491885541] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502387.491982488] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502390.311208478] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502390.647912601] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502390.648271753] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502392.878197997] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502393.208955529] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502393.209219755] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502394.479303662] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502394.812717732] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502394.812842707] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502396.677062383] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502397.026663707] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502397.026810027] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502398.270604433] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502398.580980279] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502398.589091618] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502401.119638381] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502401.444473047] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502401.444569973] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502403.339314455] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502403.650733154] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502403.650806673] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502404.943742379] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502405.255965679] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502405.256322710] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502407.173475571] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502407.511524143] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502407.511661220] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502409.965272833] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502410.321213437] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502410.321522703] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502412.192128065] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502412.525960210] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502412.526043308] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502413.800533315] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502414.129729139] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502414.129834302] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502415.977793762] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502416.284158927] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502416.284449615] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502418.747655911] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [1;31m[Err] [UserCommands.cc:1329] [0m[1;31mEntity named [[0m[1;31mwood_cube_5cm[0m[1;31m] of type [[0m[1;31m2[0m[1;31m] not found, so not removed.[0m[1;31m[0m
+[ign gazebo -r-1] [1;31m[Err] [UserCommands.cc:1329] [0m[1;31mEntity named [[0m[1;31mwood_cube_5cm[0m[1;31m] of type [[0m[1;31m2[0m[1;31m] not found, so not removed.[0m[1;31m[0m
+[ign gazebo -r-1] [INFO] [1793502927.775750448] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502927.775869409] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502929.041795937] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502929.380231891] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502929.380367505] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502931.818899629] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502932.135801916] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502932.135906449] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502933.977276485] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502934.291065891] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502934.291156086] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502935.533706948] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502935.847581857] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502935.847654428] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502937.814524707] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502938.151702423] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502938.151841932] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502940.655235317] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502940.964869693] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502940.964973432] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502942.864475630] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502943.170613504] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502943.170725539] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502944.456519843] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502944.775157348] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502944.775319771] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502946.612945322] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502946.940227267] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502946.940316872] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502948.164645121] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502948.495636704] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502948.495730507] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502950.902056158] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502951.250136445] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502951.250241710] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502953.167674102] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502953.507546760] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502953.507623238] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502954.847892381] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502955.168285584] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502955.168382753] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502957.156366093] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502957.473202798] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502957.473297552] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502959.856500583] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502960.177834193] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502960.177920561] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502962.018100954] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502962.330894629] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502962.331001144] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502963.613150657] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502963.934554448] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502963.934638380] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502965.788076182] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502966.152780884] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502966.152888481] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502967.421655554] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502967.756001716] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502967.756090006] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502970.198749966] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502970.510714050] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502970.510815297] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502972.365163972] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502972.716051474] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502972.716129305] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502973.995761296] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502974.323126145] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502974.323244835] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502976.254192323] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502976.577399929] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502976.577489162] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502978.991301753] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502979.332790303] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502979.332891539] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502981.184669978] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502981.546428302] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502981.546541221] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502982.781353154] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502983.109290919] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502983.109380373] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502984.946903186] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793502985.265006573] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793502985.265094334] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793502987.740352647] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [1;31m[Err] [UserCommands.cc:1329] [0m[1;31mEntity named [[0m[1;31mwood_cube_5cm[0m[1;31m] of type [[0m[1;31m2[0m[1;31m] not found, so not removed.[0m[1;31m[0m
+[ign gazebo -r-1] [INFO] [1793503102.987512718] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503102.987869562] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503104.332939117] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503104.673945297] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503104.674245903] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503111.280810948] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503111.645331308] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503111.645510727] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503115.581240420] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503115.900984288] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503115.901119120] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503118.613734087] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503118.959088611] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503118.959329278] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503122.899120361] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503123.214978707] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503123.215124831] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503128.686049671] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503129.025455190] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503129.025576866] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503134.405666293] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503134.730696163] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503134.731007107] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503138.551712960] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503138.887937424] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503138.888054442] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503141.211749063] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503141.572050329] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503141.572221793] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503144.165053296] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503144.514965455] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503144.515135265] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503149.614801670] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503149.940277665] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503149.941156902] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503152.359362616] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503152.708485113] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503152.708669031] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503155.451654860] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503155.764779858] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503155.764892818] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503160.515115360] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503160.829425298] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503160.829699903] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503165.824651916] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503166.139849388] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503166.140088075] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503171.012218634] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503171.345234485] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503171.345374528] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503174.465639828] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503174.801957681] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503174.802179122] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503178.788719203] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503179.148582071] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503179.148748826] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503181.089284501] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503181.402633724] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503181.402764308] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503185.648869769] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503185.961370630] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503185.961536583] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503189.997676742] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503190.325455399] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503190.325616463] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503192.301921199] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503192.629303878] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503192.629379606] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503196.003466426] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503196.333792024] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503196.333943459] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503201.244754838] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503201.606249895] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503201.606346193] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503203.814205575] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503204.167003377] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503204.167299043] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503207.054566775] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503207.371973951] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503207.372110576] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503211.461327029] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503211.776796629] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503211.776955067] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503215.018897030] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [1;31m[Err] [UserCommands.cc:1329] [0m[1;31mEntity named [[0m[1;31mwood_cube_5cm[0m[1;31m] of type [[0m[1;31m2[0m[1;31m] not found, so not removed.[0m[1;31m[0m
+[ign gazebo -r-1] [INFO] [1793503262.414737538] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503262.414978065] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503265.174670293] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503265.541352494] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503265.541568354] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503269.522348181] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503269.856714317] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503269.856820854] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503272.210122756] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503272.568853034] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503272.568958899] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503275.231956825] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503275.573359513] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503275.573505558] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503279.707769445] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503280.034261836] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503280.034355077] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503282.565817609] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503282.892394595] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503282.892524629] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503286.564488177] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503286.908302363] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503286.908503646] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503289.853048099] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503290.176505892] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503290.176655915] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503292.887341966] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503293.233732984] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503293.233812810] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503297.050918816] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [1;31m[Err] [UserCommands.cc:1329] [0m[1;31mEntity named [[0m[1;31mwood_cube_5cm[0m[1;31m] of type [[0m[1;31m2[0m[1;31m] not found, so not removed.[0m[1;31m[0m
+[ign gazebo -r-1] [INFO] [1793503414.776628804] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503414.777502372] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503416.666795435] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503416.980394101] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503416.980654100] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503421.306563152] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503421.635197367] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503421.635354590] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503425.398718746] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503425.739899378] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503425.740048135] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503427.086350417] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503427.394015921] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503427.394151985] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503429.356283701] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503429.700235819] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503429.700312765] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503435.759584666] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503436.112159681] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503436.112327830] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503439.873042211] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503440.226648993] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503440.226780188] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503441.923293694] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503442.229739644] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503442.229822942] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503445.816119008] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503446.208936053] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503446.209077142] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503448.534291748] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503448.870209587] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503448.870347830] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503452.551123899] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503452.876810656] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503452.876912920] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503454.745402116] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503455.080034529] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503455.080150770] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503456.667098924] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503456.986776936] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503456.986917285] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503461.466371307] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503461.796304825] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503461.796420556] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503466.222632200] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503466.550404721] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503466.550543880] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503468.990945599] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503469.322153267] [crane_plus_gripper_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503469.322450332] [crane_plus_gripper_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503472.227042102] [crane_plus_gripper_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503472.578142496] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503472.578330973] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503476.337657413] [crane_plus_arm_controller]: Goal reached, success!
+[ign gazebo -r-1] [INFO] [1793503476.681261631] [crane_plus_arm_controller]: Received new action goal
+[ign gazebo -r-1] [INFO] [1793503476.681706287] [crane_plus_arm_controller]: Accepted new action goal
+[ign gazebo -r-1] [INFO] [1793503479.328921056] [crane_plus_arm_controller]: Goal reached, success!

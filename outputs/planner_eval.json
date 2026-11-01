@@ -1,0 +1,1203 @@
+{
+ "Qwen2.5-0.5B-Instruct / prompt v1": {
+  "accuracy": 0.4166666666666667,
+  "sec_per_instruction": 7.657428781191508,
+  "rows": [
+   {
+    "instruction": "赤いブロックを左のトレイに入れて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "red",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "緑のブロックを右に置いて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "green",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "青は左、黄色は右に仕分けて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "yellow",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "赤と緑を両方とも右のトレイへ",
+    "ok": false,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "right"
+     },
+     {
+      "object": "blue",
+      "place": "right"
+     },
+     {
+      "object": "yellow",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"right\"}, {\"object\": \"blue\", \"place\": \"right\"}, {\"object\": \"yellow\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "green",
+      "right"
+     ],
+     [
+      "red",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "黄色いのを左に片付けてください",
+    "ok": true,
+    "plan": [
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "全部のブロックを左のトレイに集めて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     },
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"left\"}, {\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "left"
+     ],
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "黄色以外のブロックを右のトレイに入れて",
+    "ok": false,
+    "plan": [
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ],
+     [
+      "green",
+      "right"
+     ],
+     [
+      "red",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+    "ok": false,
+    "plan": [
+     {
+      "object": "green",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "left"
+     ],
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "赤と黄色は右、青と緑は左に分けて",
+    "ok": false,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     },
+     {
+      "object": "blue",
+      "place": "right"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"left\"}, {\"object\": \"blue\", \"place\": \"right\"}, {\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "right"
+     ],
+     [
+      "yellow",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "青いブロックだけ右に動かして、ほかは触らないで",
+    "ok": false,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "トマトと同じ色のブロックを左へ",
+    "ok": false,
+    "plan": [
+     {
+      "object": "green",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "red",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "晴れた空と同じ色のブロックを右へ",
+    "ok": false,
+    "plan": [
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ]
+    ]
+   }
+  ]
+ },
+ "Qwen2.5-1.5B-Instruct / prompt v1": {
+  "accuracy": 0.6666666666666666,
+  "sec_per_instruction": 16.905516644318897,
+  "rows": [
+   {
+    "instruction": "赤いブロックを左のトレイに入れて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "red",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "緑のブロックを右に置いて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "green",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "青は左、黄色は右に仕分けて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "yellow",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "赤と緑を両方とも右のトレイへ",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "green",
+      "right"
+     ],
+     [
+      "red",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "黄色いのを左に片付けてください",
+    "ok": true,
+    "plan": [
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "全部のブロックを左のトレイに集めて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     },
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"left\"}, {\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "left"
+     ],
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "黄色以外のブロックを右のトレイに入れて",
+    "ok": false,
+    "plan": [
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ],
+     [
+      "green",
+      "right"
+     ],
+     [
+      "red",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "left"
+     ],
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "赤と黄色は右、青と緑は左に分けて",
+    "ok": false,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "right"
+     },
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"right\"}, {\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "right"
+     ],
+     [
+      "yellow",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "青いブロックだけ右に動かして、ほかは触らないで",
+    "ok": true,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "トマトと同じ色のブロックを左へ",
+    "ok": false,
+    "plan": [],
+    "raw": "この指示が具体的な色を指定していないため、どの色のブロックを左に移動させるのか不明確です。色を指定していただけますか？",
+    "truth": [
+     [
+      "red",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "晴れた空と同じ色のブロックを右へ",
+    "ok": false,
+    "plan": [],
+    "raw": "この指示が具体的な色を指定していないため、どの色のブロックを右に移動させるかが不明確です。色を指定していただけますか？",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ]
+    ]
+   }
+  ]
+ },
+ "Qwen2.5-0.5B-Instruct / prompt v2": {
+  "accuracy": 0.6666666666666666,
+  "sec_per_instruction": 8.49119391043981,
+  "rows": [
+   {
+    "instruction": "赤いブロックを左のトレイに入れて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "red",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "緑のブロックを右に置いて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "green",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "青は左、黄色は右に仕分けて",
+    "ok": false,
+    "plan": [
+     {
+      "object": "yellow",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "right"
+     },
+     {
+      "object": "red",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"yellow\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"right\"}, {\"object\": \"red\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "yellow",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "赤と緑を両方とも右のトレイへ",
+    "ok": false,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "right"
+     },
+     {
+      "object": "blue",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"right\"}, {\"object\": \"blue\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "green",
+      "right"
+     ],
+     [
+      "red",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "黄色いのを左に片付けてください",
+    "ok": true,
+    "plan": [
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "全部のブロックを左のトレイに集めて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     },
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}, {\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"left\"}, {\"object\": \"black\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "left"
+     ],
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "黄色以外のブロックを右のトレイに入れて",
+    "ok": false,
+    "plan": [
+     {
+      "object": "yellow",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"yellow\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ],
+     [
+      "green",
+      "right"
+     ],
+     [
+      "red",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "left"
+     ],
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "赤と黄色は右、青と緑は左に分けて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "yellow",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     },
+     {
+      "object": "blue",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"yellow\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"left\"}, {\"object\": \"blue\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "right"
+     ],
+     [
+      "yellow",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "青いブロックだけ右に動かして、ほかは触らないで",
+    "ok": true,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "トマトと同じ色のブロックを左へ",
+    "ok": false,
+    "plan": [],
+    "raw": "[{\"object\": \"tomato\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "red",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "晴れた空と同じ色のブロックを右へ",
+    "ok": true,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ]
+    ]
+   }
+  ]
+ },
+ "Qwen2.5-1.5B-Instruct / prompt v2": {
+  "accuracy": 0.9166666666666666,
+  "sec_per_instruction": 26.206762671470642,
+  "rows": [
+   {
+    "instruction": "赤いブロックを左のトレイに入れて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "red",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "緑のブロックを右に置いて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "green",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "青は左、黄色は右に仕分けて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "yellow",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "赤と緑を両方とも右のトレイへ",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "green",
+      "right"
+     ],
+     [
+      "red",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "黄色いのを左に片付けてください",
+    "ok": true,
+    "plan": [
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "全部のブロックを左のトレイに集めて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     },
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}, {\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "left"
+     ],
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "黄色以外のブロックを右のトレイに入れて",
+    "ok": false,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "green",
+      "place": "right"
+     },
+     {
+      "object": "blue",
+      "place": "right"
+     },
+     {
+      "object": "yellow",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"green\", \"place\": \"right\"}, {\"object\": \"blue\", \"place\": \"right\"}, {\"object\": \"yellow\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ],
+     [
+      "green",
+      "right"
+     ],
+     [
+      "red",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     },
+     {
+      "object": "yellow",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}, {\"object\": \"yellow\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "left"
+     ],
+     [
+      "yellow",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "赤と黄色は右、青と緑は左に分けて",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "right"
+     },
+     {
+      "object": "yellow",
+      "place": "right"
+     },
+     {
+      "object": "blue",
+      "place": "left"
+     },
+     {
+      "object": "green",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"right\"}, {\"object\": \"yellow\", \"place\": \"right\"}, {\"object\": \"blue\", \"place\": \"left\"}, {\"object\": \"green\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "blue",
+      "left"
+     ],
+     [
+      "green",
+      "left"
+     ],
+     [
+      "red",
+      "right"
+     ],
+     [
+      "yellow",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "青いブロックだけ右に動かして、ほかは触らないで",
+    "ok": true,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ]
+    ]
+   },
+   {
+    "instruction": "トマトと同じ色のブロックを左へ",
+    "ok": true,
+    "plan": [
+     {
+      "object": "red",
+      "place": "left"
+     }
+    ],
+    "raw": "[{\"object\": \"red\", \"place\": \"left\"}]",
+    "truth": [
+     [
+      "red",
+      "left"
+     ]
+    ]
+   },
+   {
+    "instruction": "晴れた空と同じ色のブロックを右へ",
+    "ok": true,
+    "plan": [
+     {
+      "object": "blue",
+      "place": "right"
+     }
+    ],
+    "raw": "[{\"object\": \"blue\", \"place\": \"right\"}]",
+    "truth": [
+     [
+      "blue",
+      "right"
+     ]
+    ]
+   }
+  ]
+ }
+}

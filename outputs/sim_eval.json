@@ -1,0 +1,1547 @@
+{
+ "summary": {
+  "赤いブロックを左のトレイに入れて": {
+   "success_rate": 1.0,
+   "n": 10,
+   "plan_ok": true
+  },
+  "青は左、黄色は右に仕分けて": {
+   "success_rate": 1.0,
+   "n": 10,
+   "plan_ok": true
+  },
+  "信号機の色のブロック（赤・黄・緑）を左に": {
+   "success_rate": 0.9,
+   "n": 10,
+   "plan_ok": true
+  },
+  "黄色以外のブロックを右のトレイに入れて": {
+   "success_rate": 0.0,
+   "n": 10,
+   "plan_ok": false
+  },
+  "_overall": {
+   "success_rate": 0.725,
+   "n": 40,
+   "loc_err_mean_mm": 2.2737637588274344,
+   "loc_err_max_mm": 11.679229802505578,
+   "detect_rate": 0.9,
+   "t_detect_mean_s": 9.141194015741348,
+   "llm": "Qwen/Qwen2.5-1.5B-Instruct"
+  }
+ },
+ "episodes": [
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 0,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "green": 0.7883132775386068,
+    "yellow": 0.6184748577860152,
+    "red": 1.4048945544071243,
+    "blue": 2.7926143951108835
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 11.79744553565979
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 1,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "yellow": 0.8818609293360248,
+    "red": 0.4930044064768508,
+    "green": 2.8968120398459614,
+    "blue": 1.4496541154765785
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 8.828797817230225
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 2,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "yellow": 0.5008749633821089,
+    "blue": 0.8251331221169241,
+    "green": 0.49446329810622375,
+    "red": 2.295142424037327
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 8.273879766464233
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 3,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "blue": 0.7397732150374288,
+    "green": 1.5870877005372885,
+    "yellow": 1.7122587408484666,
+    "red": 3.3771748211178623
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 7.971960544586182
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 4,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "red": 0.2453834637613021,
+    "blue": 1.2535333043020176,
+    "green": 1.4360751972765675,
+    "yellow": 0.6116742805307858
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 8.659810066223145
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 5,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "red": 0.32986809514301646,
+    "blue": 1.7823015366408206,
+    "yellow": 2.3196802774296557,
+    "green": 10.098579579027056
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 8.995623111724854
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 6,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "blue": 0.1843369062553363,
+    "red": 2.082547612940739,
+    "green": 5.422649461199645,
+    "yellow": 6.721922955819312
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 8.633419036865234
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 7,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "blue": 1.6770312027952674,
+    "red": 0.3643790032781083,
+    "yellow": 3.4588216030859544,
+    "green": 11.679229802505578
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 8.958948373794556
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 8,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "blue": 0.9941535086770378,
+    "green": 1.99837570719015,
+    "red": 0.7052310925656022,
+    "yellow": 8.245237528622466
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 9.11538052558899
+  },
+  {
+   "instruction": "赤いブロックを左のトレイに入れて",
+   "seed": 9,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": null
+   },
+   "loc_err_mm": {
+    "red": 1.2826628007740684,
+    "blue": 0.684716673256473,
+    "yellow": 2.2408581400313214
+   },
+   "detected": [
+    "blue",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 44.23916697502136,
+   "t_detect": 8.954541444778442
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 0,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "green": 0.7883132775386068,
+    "yellow": 0.6184748577860152,
+    "red": 1.4048945544071243,
+    "blue": 2.7926143951108835
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 9.19629716873169
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 1,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "yellow": 0.8818609293360248,
+    "red": 0.4930044064768508,
+    "green": 2.8968120398459614,
+    "blue": 1.4496541154765785
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 8.218799829483032
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 2,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "yellow": 0.5008749633821089,
+    "blue": 0.8251331221169241,
+    "green": 0.49446329810622375,
+    "red": 2.295142424037327
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 8.898526668548584
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 3,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "blue": 0.7397732150374288,
+    "green": 1.5870877005372885,
+    "yellow": 1.7122587408484666,
+    "red": 3.3771748211178623
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 9.174217939376831
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 4,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "red": 0.2453834637613021,
+    "blue": 1.2535333043020176,
+    "green": 1.4360751972765675,
+    "yellow": 0.6116742805307858
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 10.295023679733276
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 5,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "red": 0.32986809514301646,
+    "blue": 1.7823015366408206,
+    "yellow": 2.3196802774296557,
+    "green": 10.098579579027056
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 8.708723306655884
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 6,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "blue": 0.1843369062553363,
+    "red": 2.082547612940739,
+    "green": 5.422649461199645,
+    "yellow": 6.721922955819312
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 9.061846256256104
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 7,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "blue": 1.6770312027952674,
+    "red": 0.3643790032781083,
+    "yellow": 3.4588216030859544,
+    "green": 11.679229802505578
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 8.746553182601929
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 8,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "blue": 0.9941535086770378,
+    "green": 1.99837570719015,
+    "red": 0.7052310925656022,
+    "yellow": 8.245237528622466
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 9.991655349731445
+  },
+  {
+   "instruction": "青は左、黄色は右に仕分けて",
+   "seed": 9,
+   "plan": [
+    {
+     "object": "blue",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": null,
+    "blue": "left",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "red": 1.2826628007740684,
+    "blue": 0.684716673256473,
+    "yellow": 2.2408581400313214
+   },
+   "detected": [
+    "blue",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 22.85077929496765,
+   "t_detect": 9.259437561035156
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 0,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "green": 0.7883132775386068,
+    "yellow": 0.6184748577860152,
+    "red": 1.4048945544071243,
+    "blue": 2.7926143951108835
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 8.500112771987915
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 1,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "yellow": 0.8818609293360248,
+    "red": 0.4930044064768508,
+    "green": 2.8968120398459614,
+    "blue": 1.4496541154765785
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 8.27430009841919
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 2,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "yellow": 0.5008749633821089,
+    "blue": 0.8251331221169241,
+    "green": 0.49446329810622375,
+    "red": 2.295142424037327
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 8.748854160308838
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 3,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "blue": 0.7397732150374288,
+    "green": 1.5870877005372885,
+    "yellow": 1.7122587408484666,
+    "red": 3.3771748211178623
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 8.400832653045654
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 4,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "red": 0.2453834637613021,
+    "blue": 1.2535333043020176,
+    "green": 1.4360751972765675,
+    "yellow": 0.6116742805307858
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 8.375169038772583
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 5,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "red": 0.32986809514301646,
+    "blue": 1.7823015366408206,
+    "yellow": 2.3196802774296557,
+    "green": 10.098579579027056
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 8.834547758102417
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 6,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "blue": 0.1843369062553363,
+    "red": 2.082547612940739,
+    "green": 5.422649461199645,
+    "yellow": 6.721922955819312
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 8.062377452850342
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 7,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "blue": 1.6770312027952674,
+    "red": 0.3643790032781083,
+    "yellow": 3.4588216030859544,
+    "green": 11.679229802505578
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 8.57474422454834
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 8,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": true,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": "left",
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "blue": 0.9941535086770378,
+    "green": 1.99837570719015,
+    "red": 0.7052310925656022,
+    "yellow": 8.245237528622466
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 7.93460488319397
+  },
+  {
+   "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+   "seed": 9,
+   "plan": [
+    {
+     "object": "red",
+     "place": "left"
+    },
+    {
+     "object": "yellow",
+     "place": "left"
+    },
+    {
+     "object": "green",
+     "place": "left"
+    }
+   ],
+   "plan_ok": true,
+   "success": false,
+   "where": {
+    "red": "left",
+    "blue": null,
+    "green": null,
+    "yellow": "left"
+   },
+   "loc_err_mm": {
+    "red": 1.2826628007740684,
+    "blue": 0.684716673256473,
+    "yellow": 2.2408581400313214
+   },
+   "detected": [
+    "blue",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 32.39059090614319,
+   "t_detect": 7.919182300567627
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 0,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "green": 0.7883132775386068,
+    "yellow": 0.6184748577860152,
+    "red": 1.4048945544071243,
+    "blue": 2.7926143951108835
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 8.843209743499756
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 1,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "yellow": 0.8818609293360248,
+    "red": 0.4930044064768508,
+    "green": 2.8968120398459614,
+    "blue": 1.4496541154765785
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 9.100732564926147
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 2,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "yellow": 0.5008749633821089,
+    "blue": 0.8251331221169241,
+    "green": 0.49446329810622375,
+    "red": 2.295142424037327
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 9.570571184158325
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 3,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "blue": 0.7397732150374288,
+    "green": 1.5870877005372885,
+    "yellow": 1.7122587408484666,
+    "red": 3.3771748211178623
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 10.183530807495117
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 4,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "red": 0.2453834637613021,
+    "blue": 1.2535333043020176,
+    "green": 1.4360751972765675,
+    "yellow": 0.6116742805307858
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 11.051778554916382
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 5,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "red": 0.32986809514301646,
+    "blue": 1.7823015366408206,
+    "yellow": 2.3196802774296557,
+    "green": 10.098579579027056
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 12.027240991592407
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 6,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "blue": 0.1843369062553363,
+    "red": 2.082547612940739,
+    "green": 5.422649461199645,
+    "yellow": 6.721922955819312
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 9.036839485168457
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 7,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "blue": 1.6770312027952674,
+    "red": 0.3643790032781083,
+    "yellow": 3.4588216030859544,
+    "green": 11.679229802505578
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 10.852059125900269
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 8,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": "right",
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "blue": 0.9941535086770378,
+    "green": 1.99837570719015,
+    "red": 0.7052310925656022,
+    "yellow": 8.245237528622466
+   },
+   "detected": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 10.445346117019653
+  },
+  {
+   "instruction": "黄色以外のブロックを右のトレイに入れて",
+   "seed": 9,
+   "plan": [
+    {
+     "object": "red",
+     "place": "right"
+    },
+    {
+     "object": "green",
+     "place": "right"
+    },
+    {
+     "object": "blue",
+     "place": "right"
+    },
+    {
+     "object": "yellow",
+     "place": "right"
+    }
+   ],
+   "plan_ok": false,
+   "success": false,
+   "where": {
+    "red": "right",
+    "blue": "right",
+    "green": null,
+    "yellow": "right"
+   },
+   "loc_err_mm": {
+    "red": 1.2826628007740684,
+    "blue": 0.684716673256473,
+    "yellow": 2.2408581400313214
+   },
+   "detected": [
+    "blue",
+    "red",
+    "yellow"
+   ],
+   "t_llm": 35.94452714920044,
+   "t_detect": 9.170839548110962
+  }
+ ]
+}

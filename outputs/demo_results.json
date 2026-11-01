@@ -1,0 +1,108 @@
+[
+ {
+  "instruction": "青は左、黄色は右に仕分けて",
+  "seed": 7,
+  "plan": [
+   {
+    "object": "blue",
+    "place": "left"
+   },
+   {
+    "object": "yellow",
+    "place": "right"
+   }
+  ],
+  "plan_ok": true,
+  "success": true,
+  "where": {
+   "red": null,
+   "blue": "left",
+   "green": null,
+   "yellow": "right"
+  },
+  "loc_err_mm": {
+   "blue": 1.6770312027952674,
+   "red": 0.3643790032781083,
+   "yellow": 3.4588216030859544,
+   "green": 11.679229802505578
+  },
+  "detected": [
+   "blue",
+   "green",
+   "red",
+   "yellow"
+  ],
+  "t_llm": 39.85187578201294,
+  "t_detect": 10.390767574310303,
+  "video": "outputs/demo_1.mp4"
+ },
+ {
+  "instruction": "信号機の色のブロック（赤・黄・緑）を左に",
+  "seed": 3,
+  "plan": [
+   {
+    "object": "red",
+    "place": "left"
+   },
+   {
+    "object": "green",
+    "place": "left"
+   },
+   {
+    "object": "yellow",
+    "place": "left"
+   }
+  ],
+  "plan_ok": true,
+  "success": true,
+  "where": {
+   "red": "left",
+   "blue": null,
+   "green": "left",
+   "yellow": "left"
+  },
+  "loc_err_mm": {
+   "blue": 0.7397732150374288,
+   "green": 1.5870877005372885,
+   "yellow": 1.7122587408484666,
+   "red": 3.3771748211178623
+  },
+  "detected": [
+   "blue",
+   "green",
+   "red",
+   "yellow"
+  ],
+  "t_llm": 26.882726669311523,
+  "t_detect": 7.912774562835693,
+  "video": "outputs/demo_2.mp4"
+ },
+ {
+  "instruction": "トマトと同じ色のブロックを左へ",
+  "seed": 11,
+  "plan": [],
+  "plan_ok": false,
+  "success": false,
+  "where": {
+   "red": null,
+   "blue": null,
+   "green": null,
+   "yellow": null
+  },
+  "loc_err_mm": {
+   "blue": 1.65070764485401,
+   "green": 1.4241823024167262,
+   "red": 5.839688184504055,
+   "yellow": 2.8781834517216964
+  },
+  "detected": [
+   "blue",
+   "green",
+   "red",
+   "yellow"
+  ],
+  "t_llm": 26.19456458091736,
+  "t_detect": 8.034017086029053,
+  "video": "outputs/demo_3.mp4"
+ }
+]

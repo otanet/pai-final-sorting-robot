@@ -1,0 +1,6 @@
+report/node_modules/
+report/_preview/
+outputs/_*
+outputs/**/_*
+__pycache__/
+*.pyc

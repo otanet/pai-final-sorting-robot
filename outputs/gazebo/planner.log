@@ -1,0 +1,15 @@
+[INFO] [1793502160.146724352] [planner_node]: 準備完了（Qwen/Qwen2.5-1.5B-Instruct）
+[INFO] [1793502220.926951988] [planner_node]: 指示: 青と赤は左、黄色は右に仕分けて
+/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+[INFO] [1793502340.744014767] [planner_node]: LLM の出力: [{"object": "blue", "place": "left"}, {"object": "red", "place": "left"}, {"object": "yellow", "place": "right"}] -> 手順 [{'object': 'blue', 'place': 'left'}, {'object': 'red', 'place': 'left'}, {'object': 'yellow', 'place': 'right'}]
+[INFO] [1793502891.237371397] [planner_node]: 指示: 青と赤は左、黄色は右に仕分けて
+[INFO] [1793502927.742820778] [planner_node]: LLM の出力: [{"object": "blue", "place": "left"}, {"object": "red", "place": "left"}, {"object": "yellow", "place": "right"}] -> 手順 [{'object': 'blue', 'place': 'left'}, {'object': 'red', 'place': 'left'}, {'object': 'yellow', 'place': 'right'}]
+[INFO] [1793503048.595356572] [planner_node]: 指示: 青と赤は左、黄色は右に仕分けて
+[INFO] [1793503102.931848805] [planner_node]: LLM の出力: [{"object": "blue", "place": "left"}, {"object": "red", "place": "left"}, {"object": "yellow", "place": "right"}] -> 手順 [{'object': 'blue', 'place': 'left'}, {'object': 'red', 'place': 'left'}, {'object': 'yellow', 'place': 'right'}]
+[INFO] [1793503357.094772619] [planner_node]: 指示: 赤は右、青は左のトレイに仕分けて
+[INFO] [1793503414.702803062] [planner_node]: LLM の出力: [{"object": "red", "place": "right"}, {"object": "blue", "place": "left"}] -> 手順 [{'object': 'red', 'place': 'right'}, {'object': 'blue', 'place': 'left'}]

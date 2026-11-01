@@ -1,0 +1,8 @@
+genesis-world==1.4.5
+torch
+transformers>=4.46
+accelerate
+av
+numpy
+pillow
+matplotlib
